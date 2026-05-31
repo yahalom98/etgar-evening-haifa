@@ -11,9 +11,16 @@ export default function App() {
     let data = await server.json();
     setApiData(data);
   }
+
+  useEffect(() => {
+    loadData();
+  }, []);
+
+
+
   return (
     <div>
-
+      {}
     </div>
   )
 }
